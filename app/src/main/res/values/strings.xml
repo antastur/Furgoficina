@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Furgoficina3</string>
+    <string name="botCamion">Camion</string>
+    <string name="botVolver">VOLVER</string>
+    <string name="botSalir">SALIR</string>
+    <string name="botConductor">Conductor</string>
+    <string name="textMatricula">Introduce la matrícula</string>
+    <string name="textKm">Introduce los kilometros</string>
+    <string name="listExtintor">Introduce fecha del timbrado del extintor</string>
+    <string name="listRevTac">Introduce fecha de la última revisión del tacógrafo</string>
+    <string name="listItv">Introduce fecha de la última revisión de ITV</string>
+    <string name="listSegMerc">Introduce fecha del último pago del seguro de mercancías</string>
+    <string name="listSegVehic">Introduce fecha del último pago del seguro del vehículo</string>
+    <string name="listRuedas">Introduce fecha del último cambio de ruedas</string>
+    <string name="listPastillas">Introduce fecha del último cambio de pastillas de freno</string>
+    <string name="listPermisoCirculacion">Introduce fecha de anterior emision del permiso circulación</string>
+    <string name="listReparacion">Introduce fecha de la última reparación</string>
+    <string name="listCarnetConducir">Introduce fecha de anterior emision del carnet de conducir</string>
+    <string name="listCAP">Introduce fecha de anterior emision del CAP</string>
+    <string name="listADR">Introduce fecha de anterior emision del ADR</string>
+    <string name="listarjtacConductor">Introduce fecha de anterior emision de la tarjeta de tacografo de conductor</string>
+    <string name="textNombre">Introduce el nombre</string>
+    <string name="textDni">Introduce el DNI</string>
+    <string name="bIntroducir">Introducir</string>
+    <string name="bConsultar">Consultar</string>
+    <string name="bModificar">Modificar</string>
+    <string name="bBorrar">Borrar</string>
+    <string name="textConsultaConductor">Introduce el DNI de quien quieras obtener los datos</string>
+    <string name="text2ConsultaConductor">Todos los datos que se corresponden con ese DNI</string>
+    <string name="textCambioConductor">Introduce el DNI de quien quieras cambiar los datos</string>
+    <string name="imCambiar">Haz clic en el icono de los datos que quieras cambiar</string>
+    <string name="textBorradoConductor">Introduce el DNI del conductor que quieres eliminar</string>
+    <string name="imIntroducir">Introducir datos de un nuevo conductor</string>
+    <string name="textConsultaCamion">Introduce la matrícula del vehículo a obtener los datos</string>
+    <string name="textBorradoCamion">Introduce matrícula del vehículo que quieres eliminar</string>
+    <string name="textCambioCamion">Introduce la matrícula de quien quieras cambiar los datos</string>
+</resources>

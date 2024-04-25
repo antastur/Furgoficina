@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constCamion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.furgoficina.CamionActivity">
+
+    <ScrollView
+        android:id="@+id/slCamion"
+        android:layout_width="406dp"
+        android:layout_height="580dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/imMatricula"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/textMatricula"
+                    app:srcCompat="@mipmap/camionred" />
+
+                <EditText
+                    android:id="@+id/textMatricula"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:hint="@string/textMatricula"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imExtintor"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/listExtintor"
+                    app:srcCompat="@mipmap/extintor" />
+
+                <EditText
+                    android:id="@+id/dateExtintorCamion"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="@string/listExtintor"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textMatricula"
+                    tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imTacConsCamion"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/listRevTac"
+                    app:srcCompat="@mipmap/tacografored3" />
+
+                <EditText
+                    android:id="@+id/dateRevTacografoCamion"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="@string/listRevTac"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateExtintorCamion"
+                    tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imItvCambCamion"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/listItv"
+                    app:srcCompat="@mipmap/itvred" />
+
+                <EditText
+                    android:id="@+id/dateItvCamion"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="@string/listItv"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateRevTacografoCamion"
+                    tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imPaqueteCambCamion"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/listSegMerc"
+                    app:srcCompat="@mipmap/paquete2red" />
+
+                <EditText
+                    android:id="@+id/dateSegMercanciasCamion"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="@string/listSegMerc"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateItvCamion"
+                    tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imSeguroCambCamion"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/listSegVehic"
+                    app:srcCompat="@mipmap/segurocoche2red" />
+
+                <EditText
+                    android:id="@+id/dateSegVehiculoCamion"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="@string/listSegVehic"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateSegMercanciasCamion"
+                    tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imRuedasCambCamion"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/listRuedas"
+                    app:srcCompat="@mipmap/ruedasred2" />
+
+                <EditText
+                    android:id="@+id/dateRuedasCamion"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="@string/listRuedas"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateSegVehiculoCamion"
+                    tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imPastillasConsCamion"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/listPastillas"
+                    app:srcCompat="@mipmap/frenodediscored" />
+
+                <EditText
+                    android:id="@+id/datePastillasCamion"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="@string/listPastillas"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateRuedasCamion"
+                    tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imPermCirculacionCambCamion"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/listPermisoCirculacion"
+                    app:srcCompat="@mipmap/pngeggred" />
+
+                <EditText
+                    android:id="@+id/datePermCirculacionCamion"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="@string/listPermisoCirculacion"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/datePastillasCamion"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imReparacionCambCamion"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/listReparacion"
+                    app:srcCompat="@mipmap/averia2red" />
+
+                <EditText
+                    android:id="@+id/dateUltReparacionCamion"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="@string/listReparacion"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/datePermCirculacionCamion" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imKilometrosCambCamion"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/textKm"
+                    app:srcCompat="@mipmap/kilometrosred" />
+
+                <EditText
+                    android:id="@+id/textkilometrosCamion"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:focusable="auto"
+                    android:hint="@string/textKm"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateUltReparacionCamion" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bSiguiente"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="608dp"
+        android:onClick="onClick"
+        android:text="@string/bIntroducir"
+        app:layout_constraintStart_toEndOf="@+id/bVolverCambioCamion"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/bVolverCambioCamion"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="608dp"
+        android:onClick="volver"
+        android:text="@string/botVolver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

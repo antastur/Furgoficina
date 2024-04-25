@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.furgoficina3" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Furgoficina3" >
+        <activity
+            android:name="com.example.furgoficina.BorradoCamionActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.furgoficina.CambiarCamionActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.furgoficina.ConsultaCamionActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.furgoficina.BorradoActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.furgoficina.CambioActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.furgoficina.ConsultaActivity"
+            android:exported="false" />
+        <activity
+            android:name="Documentos.DocumentosActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.furgoficina.GestionDocumentos"
+            android:exported="false" />
+        <activity
+            android:name="com.example.furgoficina.GestionCamion"
+            android:exported="false" />
+        <activity
+            android:name="com.example.furgoficina.GestionConductor"
+            android:exported="false" />
+        <activity
+            android:name="com.example.furgoficina.ConductorActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.furgoficina.CamionActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.furgoficina.MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

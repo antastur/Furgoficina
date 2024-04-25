@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.furgoficina.CambiarCamionActivity">
+
+
+    <TextView
+        android:id="@+id/textCambioCamion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/imCambiar"
+        android:textColor="#0C0C0C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMatriculaCambiarCamion" />
+
+    <TextView
+        android:id="@+id/textCambiarCamion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textCambioCamion"
+        android:textColor="#0C0C0C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/immatriculaCambiar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/textDni"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCambiarCamion1"
+        app:srcCompat="@mipmap/camionred" />
+
+    <ScrollView
+        android:id="@+id/slCambiarCamion2"
+        android:layout_width="406dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCambioCamion2">
+
+        <LinearLayout
+            android:id="@+id/Linearlayout1ConsultaCamion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imExtintorCambCamion"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:contentDescription="@string/listExtintor"
+                    android:focusable="true"
+                    app:srcCompat="@mipmap/extintor"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/dateExtintorCambCamion"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textMatricula"
+                    tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imTacConsCamion"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:contentDescription="@string/listRevTac"
+                    android:focusable="true"
+                    app:srcCompat="@mipmap/tacografored3"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/dateRevTacografoCambCamion"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateExtintorCambCamion"
+                    tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imItvCambCamion"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:contentDescription="@string/listItv"
+                    android:focusable="true"
+                    app:srcCompat="@mipmap/itvred"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/dateItvCambCamion"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateRevTacografoCambCamion"
+                    tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imPaqueteCambCamion"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:contentDescription="@string/listSegMerc"
+                    android:focusable="true"
+                    app:srcCompat="@mipmap/paquete2red"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/dateSegMercanciasCambCamion"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateItvCambCamion"
+                    tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imSeguroCambCamion"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:contentDescription="@string/listSegVehic"
+                    android:focusable="true"
+                    app:srcCompat="@mipmap/segurocoche2red"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/dateSegVehiculoCambCamion"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateSegMercanciasCambCamion"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imRuedasCambCamion"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:contentDescription="@string/listRuedas"
+                    android:focusable="true"
+                    app:srcCompat="@mipmap/ruedasred2" />
+
+                <EditText
+                    android:id="@+id/dateRuedasCambCamion"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateSegVehiculoCambCamion"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imPastillasConsCamion"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:contentDescription="@string/listPastillas"
+                    android:focusable="true"
+                    app:srcCompat="@mipmap/frenodediscored" />
+
+                <EditText
+                    android:id="@+id/datePastillasCambCamion"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateRuedasCambCamion" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imPermCirculacionCambCamion"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:contentDescription="@string/listPermisoCirculacion"
+                    android:focusable="true"
+                    app:srcCompat="@mipmap/pngeggred" />
+
+                <EditText
+                    android:id="@+id/datePermCirculacionCambCamion"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/datePastillasCambCamion" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imReparacionCambCamion"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:contentDescription="@string/listReparacion"
+                    android:focusable="true"
+                    app:srcCompat="@mipmap/averia2red" />
+
+                <EditText
+                    android:id="@+id/dateUltReparacionCambCamion"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/datePermCirculacionCambCamion" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imKilometrosCambCamion"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:contentDescription="@string/textKm"
+                    android:focusable="true"
+                    app:srcCompat="@mipmap/kilometrosred" />
+
+                <EditText
+                    android:id="@+id/textkilometrosCambCamion"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:minHeight="48dp"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateUltReparacionCambCamion" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <EditText
+        android:id="@+id/textMatriculaCambiarCamion"
+        android:layout_width="243dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/immatriculaCambiar"
+        app:layout_constraintTop_toBottomOf="@+id/textCambiarCamion1"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/bVolverCambioCamion"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:onClick="onClick"
+        android:text="@string/bModificar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slCambiarCamion2"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/bVolverCambioCamion3"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:onClick="volver"
+        android:text="@string/botVolver"
+        app:layout_constraintStart_toEndOf="@+id/bVolverCambioCamion"
+        app:layout_constraintTop_toBottomOf="@+id/slCambiarCamion2"
+        tools:ignore="TextContrastCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

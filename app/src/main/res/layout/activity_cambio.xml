@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.furgoficina.CambioActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/DateNombreCambio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context="com.example.furgoficina.CambioActivity">
+
+        <Button
+            android:id="@+id/bvolverConsultar3"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick"
+            android:text="@string/bModificar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/datePermConducirCambio"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/textCambiarConductor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="64dp"
+            android:text="@string/textCambioConductor"
+            android:textColor="#0C0C0C"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bvolverConsultar2"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:onClick="volver"
+            android:text="@string/botVolver"
+            app:layout_constraintStart_toEndOf="@+id/bvolverConsultar3"
+            app:layout_constraintTop_toBottomOf="@+id/datePermConducirCambio"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/datePermConducirCambio"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="date"
+            app:layout_constraintStart_toEndOf="@+id/imPermCondCambio"
+            app:layout_constraintTop_toBottomOf="@+id/dateAdrCambio"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/dateAdrCambio"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="date"
+            app:layout_constraintStart_toEndOf="@+id/imTarjTacogCambio"
+            app:layout_constraintTop_toBottomOf="@+id/dateTarjTacogCambio"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/dateCapCambio2"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="date"
+            app:layout_constraintStart_toEndOf="@+id/imCapCambio"
+            app:layout_constraintTop_toBottomOf="@+id/dateNombCambio"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/dateNombCambio"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintStart_toEndOf="@+id/imNombreCambio"
+            app:layout_constraintTop_toBottomOf="@+id/textCambioConductor2"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/imPermCondCambio"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:contentDescription="@string/listPermisoCirculacion"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imadrCambio"
+            app:srcCompat="@mipmap/tarjetadeidentificacion1red" />
+
+        <ImageView
+            android:id="@+id/imadrCambio"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:contentDescription="@string/listADR"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imTarjTacogCambio"
+            app:srcCompat="@mipmap/adrred" />
+
+        <ImageView
+            android:id="@+id/imTarjTacogCambio"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:contentDescription="@string/listarjtacConductor"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imCapCambio"
+            app:srcCompat="@mipmap/tacografored" />
+
+        <ImageView
+            android:id="@+id/imCapCambio"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:contentDescription="@string/listCAP"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imNombreCambio"
+            app:srcCompat="@mipmap/capred" />
+
+        <ImageView
+            android:id="@+id/imNombreCambio"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:contentDescription="@string/textNombre"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textCambioConductor2"
+            app:srcCompat="@mipmap/nombrered" />
+
+        <EditText
+            android:id="@+id/textdniMod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toEndOf="@+id/imdniMod"
+            app:layout_constraintTop_toBottomOf="@+id/textCambiarConductor"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/imdniMod"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/textDni"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textCambiarConductor"
+            app:srcCompat="@mipmap/tarjetadeidentificacionred3" />
+
+        <EditText
+            android:id="@+id/dateTarjTacogCambio"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="date"
+            app:layout_constraintStart_toEndOf="@+id/imTarjTacogCambio"
+            app:layout_constraintTop_toBottomOf="@+id/dateCapCambio2"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textCambioConductor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="52dp"
+            android:text="@string/imCambiar"
+            android:textColor="#0C0C0C"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textdniMod" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

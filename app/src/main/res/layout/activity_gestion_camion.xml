@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.furgoficina.GestionCamion">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.furgoficina.GestionConductor">
+
+        <Button
+            android:id="@+id/bModificarCam"
+            android:layout_width="141dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="92dp"
+            android:onClick="bmodificarCamion"
+            android:text="@string/bModificar"
+            app:backgroundTint="#F13527"
+            app:layout_constraintStart_toEndOf="@+id/imModificarCam"
+            app:layout_constraintTop_toBottomOf="@+id/bConsultarCam"
+            tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/bBorrarCam"
+            android:layout_width="141dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="90dp"
+            android:onClick="bborrar"
+            android:text="@string/bBorrar"
+            app:backgroundTint="#F13527"
+            app:layout_constraintStart_toEndOf="@+id/imBorrarCam"
+            app:layout_constraintTop_toBottomOf="@+id/bModificarCam"
+            tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/bConsultarCam"
+            android:layout_width="141dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="90dp"
+            android:onClick="bconsultar"
+            android:text="@string/bConsultar"
+            app:backgroundTint="#F13527"
+            app:layout_constraintStart_toEndOf="@+id/imConsultarCam"
+            app:layout_constraintTop_toBottomOf="@+id/bInsertarCam"
+            tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <ImageView
+            android:id="@+id/imModificarCam"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/bModificar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imConsultarCam"
+            app:srcCompat="@mipmap/cambiarred" />
+
+        <ImageView
+            android:id="@+id/imBorrarCam"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/bBorrar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imModificarCam"
+            app:srcCompat="@mipmap/eliminarred" />
+
+        <ImageView
+            android:id="@+id/imConsultarCam"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/bConsultar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imInsertarCam"
+            app:srcCompat="@mipmap/consultared" />
+
+        <ImageView
+            android:id="@+id/imInsertarCam"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/imIntroducir"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/escribirred"
+            tools:ignore="ImageContrastCheck" />
+
+        <Button
+            android:id="@+id/bInsertarCam"
+            android:layout_width="141dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="60dp"
+            android:onClick="bintroducir"
+            android:text="@string/bIntroducir"
+            app:backgroundTint="#F13527"
+            app:layout_constraintStart_toEndOf="@+id/imInsertarCam"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/bVolverGestCam"
+            android:layout_width="319dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="60dp"
+            android:onClick="volver"
+            android:text="@string/botVolver"
+            app:backgroundTint="#F13527"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imBorrarCam"
+            tools:ignore="TextContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

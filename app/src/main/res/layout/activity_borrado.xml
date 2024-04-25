@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.furgoficina.BorradoActivity">
+
+    <Button
+        android:id="@+id/bvolverBorradoCamion2"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:onClick="volver"
+        android:text="@string/botVolver"
+        app:layout_constraintStart_toEndOf="@+id/bvolverBorradoCamion"
+        app:layout_constraintTop_toBottomOf="@+id/textPersonMatriculaBorrar"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/bvolverBorradoCamion"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:onClick="onClick"
+        android:text="@string/bBorrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPersonMatriculaBorrar"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imMatriculaBorrado"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/textDni"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBorradoConductor"
+        app:srcCompat="@mipmap/tarjetadeidentificacionred3" />
+
+    <ImageView
+        android:id="@+id/imBorradoCamion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="130dp"
+        android:contentDescription="@string/botConductor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/borrarconductorred" />
+
+    <EditText
+        android:id="@+id/textPersonMatriculaBorrar"
+        android:layout_width="243dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/imMatriculaBorrado"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBorradoConductor"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewBorradoConductor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/textBorradoConductor"
+        android:textColor="#0B0A0A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imBorradoCamion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
